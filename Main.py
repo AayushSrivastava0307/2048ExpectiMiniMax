@@ -111,9 +111,7 @@ def gameLoop(screen, tileFont, scoreFont, pool):
 
 if __name__ == '__main__':
     mp.freeze_support()
-    mp.set_start_method('spawn')
     pool = mp.Pool(processes=4)
-
     pygame.init()
     screen = pygame.display.set_mode(size)
     pygame.display.set_caption("2048")
